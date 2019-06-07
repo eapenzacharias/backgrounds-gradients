@@ -1,0 +1,53 @@
+*{
+    border: 1px solid red !important;
+}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    margin: -16px auto;
+}
+li{
+    display: inline-block;
+    float: left;
+    margin: 3px;
+}
+nav {
+    background-color: gray;
+    height: 35px;
+    max-width: 1000px;
+    margin: 50px auto 0 auto;
+    position: static;
+}
+nav a {
+    margin: 0 12px;
+}
+nav input {
+    margin: 0 12px;
+    background-color: rgba(255, 255, 255, 0.377);
+    border-radius: 8px;
+    height: 16px;
+    width:100px;
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 5px 35px auto auto;
+    height: 22px;
+}
+.container.top {
+    max-width:1440px;
+    margin: 0 auto;
+    background-image: url("assets/your_verse_hero.jpg");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto;
+    height: 550px;
+}
