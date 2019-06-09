@@ -67,6 +67,9 @@ header li{
 header li:hover {
     background-color: rgba(0, 0, 0, 0.466);
 }
+header li:last-of-type:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
 header li a img{
     height: 20px;
     width: auto;
