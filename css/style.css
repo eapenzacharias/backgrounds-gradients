@@ -1,48 +1,8 @@
-/*{
-    border: 1px solid red !important;
-}
-*/
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
-footer {
-    color: #6e6e6e;
-    font-size: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 20px;
-    width: 1100px;
-
-}
-footer a{
-    color: #08c;
-    text-decoration: none;
-}
-footer img{
-    height: 15px;
-    margin-bottom: -3px;
-}
-footer li + li:before {
-    content: " | ";
-    padding: 0px;
-}
-footer li{
-    display: inline-block;
-    float: none;
-}
-footer ul{
-    list-style-type: none;
-    overflow: hidden;
-}
-h1 {
-    color: white;
-    font-size: 65px;
-    font-weight: lighter;
-    margin: 90px auto -30px auto;
-    
-}
-header {
+main {
     align-content: center;
     align-items: center;
     text-align: center;
@@ -53,32 +13,39 @@ header {
     margin: -16px auto;
     width: 100%;
 }
-header a {
+main a {
     color: white;
     text-decoration: none;
 
 }
-header li{
+main li{
     display: inline-block;
     float: left;
     padding: 12px 15px 12px 15px;
     vertical-align: middle;
 }
-header li:hover {
+main li:hover {
     background-color: rgba(0, 0, 0, 0.466);
 }
-header li:last-of-type:hover {
+main li:last-of-type:hover {
     background-color: rgba(0, 0, 0, 0);
 }
-header li a img{
+main li a img{
     height: 20px;
     width: auto;
 }
-header ul {
+main ul {
     list-style-type: none;
     overflow: hidden;
     margin: 0 35px auto auto;
     height: 100%;
+}
+main > div {
+    height: 31px;
+    overflow: hidden;
+}
+main > div img:hover {
+    margin-top: -32px;
 }
 nav {
     border-radius: 5px;
@@ -94,7 +61,7 @@ nav {
     background: linear-gradient(to bottom, #757575 0%,#565656 40%,#4f4f4f 50%,#494949 60%,#7f7f7f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#757575', endColorstr='#7f7f7f',GradientType=0 );
 }
-nav a {
+nav ul a {
     margin: 0 12px;
 }
 nav input {
@@ -137,6 +104,51 @@ nav span {
     background-size: auto;
     height: 665px;
 }
+.sec a:nth-child(1) {
+    background-image: url(assets/promo_iphone5s.jpg);
+}
+.sec a:nth-child(2) {
+    background-image: url(assets/promo_iphone5c.jpg);
+}
+.sec a:nth-child(3) {
+    background-image: url(assets/promo_30_years.jpg);
+}
+.sec a:nth-child(4) {
+    background-image: url(assets/promo_supplier_responsibility.jpg);
+}
+.lower {
+    color: #6e6e6e;
+    font-size: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 20px;
+    width: 1100px;
+
+}
+.lower a{
+    color: #08c;
+    text-decoration: none;
+}
+.lower img{
+    height: 15px;
+    margin-bottom: -3px;
+}
+.lower li + li:before {
+    content: " | ";
+    padding: 0px;
+}
+.lower li{
+    display: inline-block;
+    float: none;
+}
+.lower ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+.promo {
+    width: 100%;
+    height: 100%;
+}
 .sec.container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -157,16 +169,9 @@ nav span {
     padding: 0;
 
 }
-[href="link"]{
-    font-size: 25px;
-    margin-top: 30px;
+[href="one"]{
+    margin: 60px 0 -20px 0;
 }
-[href="link"]:hover {
-    text-decoration: underline white;
-}
-[href="link"] img{
-    height: 30px;
-    width: auto;
-    margin-bottom: -5px;
-    margin-left: 3px;
+[href="two"]{
+    margin-bottom: 25px;
 }
