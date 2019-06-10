@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -21,11 +22,21 @@ main a {
 main li{
     display: inline-block;
     float: left;
-    padding: 12px 15px 12px 15px;
+    padding: 12px 20px 12px 20px;
     vertical-align: middle;
 }
 main li:hover {
     background-color: rgba(0, 0, 0, 0.466);
+}
+main li:first-of-type {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+}
+main li:last-of-type {
+    padding-right: 0;
 }
 main li:last-of-type:hover {
     background-color: rgba(0, 0, 0, 0);
@@ -37,7 +48,9 @@ main li a img{
 main ul {
     list-style-type: none;
     overflow: hidden;
-    margin: 0 35px auto auto;
+    margin: 0 20px auto 0;
+    padding-left: 0;
+    padding-right: 0;
     height: 100%;
 }
 main > div {
@@ -65,7 +78,7 @@ nav ul a {
     margin: 0 12px;
 }
 nav input {
-    margin: -3px 12px;
+    margin: -3px 10px;
     background-color: rgba(255,255,255,.1);
     background-image: url("assets/search_icon.png");
     background-repeat: no-repeat;
@@ -74,7 +87,7 @@ nav input {
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.6) 0 2px 1px inset, rgba(255, 255, 255, 0.2) 0 1px 0;
     border: 0px solid rgba(255,255,255,.1);
-    height: 18px;
+    height: 22px;
     padding: 0;
     width:100px;
 }
