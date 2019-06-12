@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+main {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: lighter;
+    font-size: 30px;
+    margin: -16px auto;
+    width: 100%;
+}
+main a {
+    color: white;
+    text-decoration: none;
+
+}
+main li{
+    display: inline-block;
+    float: left;
+    padding: 12px 20px 12px 20px;
+    vertical-align: middle;
+    height:39px;
+}
+main li:hover {
+    background-color: rgba(0, 0, 0, 0.466);
+}
+main li:first-of-type {
+   margin: 0;
+   padding: 0;
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+}
+main li:last-of-type {
+    padding-right: 0;
+}
+main li:last-of-type:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+main li a{
+    height: 35px;
+}
+li a > div{
+    background-image: url("assets/Apple-Logo.png");
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 35px;
+    margin-top: -12px;
+
+}
+main ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0 20px auto 0;
+    padding-left: 0;
+    padding-right: 0;
+    height: 100%;
+}
+nav {
+    border-radius: 5px;
+    height: 40px;
+    max-width: 1000px;
+    margin: 98px auto 0 auto;
+    position: static;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    background: #757575; /* Old browsers */
+    background: -moz-linear-gradient(top, #757575 0%, #565656 40%, #4f4f4f 50%, #494949 60%, #7f7f7f 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #757575 0%,#565656 40%,#4f4f4f 50%,#494949 60%,#7f7f7f 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #757575 0%,#565656 40%,#4f4f4f 50%,#494949 60%,#7f7f7f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#757575', endColorstr='#7f7f7f',GradientType=0 );
+}
+nav ul a {
+    margin: 0 12px;
+}
+nav input {
+    margin: -3px 10px;
+    background-color: rgba(255,255,255,.1);
+    background-image: url("assets/search_icon.png");
+    background-repeat: no-repeat;
+    background-position: 5px;
+    background-size: 14px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.6) 0 2px 1px inset, rgba(255, 255, 255, 0.2) 0 1px 0;
+    border: 0px solid rgba(255,255,255,.1);
+    height: 22px;
+    padding: 0;
+    width:100px;
+}
+nav input:focus {
+    background-image: url("assets/search_icon2.png");
+    background-color: white;
+    width: 120px;
+}
+nav span {
+    display: inline-block;
+    float: left;
+    width: 1px;
+    height: 100%;
+    background-color:#363636;
+    margin: 0px;
+    padding: 0;
+}
+.container {
+    max-width:1440px;
+    margin: 0 auto;
+}
+.container.top {
+    background-image: url("assets/your_verse_hero.jpg");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto;
+    height: 665px;
+}
+.sec a:nth-child(1) {
+    background-image: url(assets/promo_iphone5s.jpg);
+}
+.sec a:nth-child(2) {
+    background-image: url(assets/promo_iphone5c.jpg);
+}
+.sec a:nth-child(3) {
+    background-image: url(assets/promo_30_years.jpg);
+}
+.sec a:nth-child(4) {
+    background-image: url(assets/promo_supplier_responsibility.jpg);
+}
+.lower {
+    color: #6e6e6e;
+    font-size: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 20px;
+    width: 1100px;
+
+}
+.lower a{
+    color: #08c;
+    text-decoration: none;
+}
+.lower img{
+    height: 15px;
+    margin-bottom: -3px;
+}
+.lower li + li:before {
+    content: " | ";
+    padding: 0px;
+}
+.lower li{
+    display: inline-block;
+    float: none;
+}
+.lower ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+.promo {
+    width: 100%;
+    height: 100%;
+}
+.sec.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 200px;
+}
+.sec div{
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto;
+    margin: 0;
+    padding: 0;
+    border: 0.5px solid white;
+}
+.sec img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+[href="one"]{
+    margin: 60px 0 -20px 0;
+}
+[href="one"] > div{
+    background-image: url("assets/your_verse_title_small.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto;
+    height: 104px;
+    width: 960px;
+}
+[href="two"]{
+    margin-bottom: 25px;
+}
+[href="two"] > div{
+    background-image: url("assets/your_verse_subhead_small.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto;
+    height: 82px;
+    width: 980px;
+}
+[href="three"] > div{
+    background-image: url("assets/cta_your_verse_27pt.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 31px;
+    width: 960px;
+}
+[href="three"] > div:hover{
+    background-position: bottom;
+}
